@@ -15,7 +15,7 @@
 The goal of this project is to build Fwitter (aka Flatiron Twitter).
 
 You'll be implementing Fwitter using multiple objects that interact, including separate classes for User and Tweet.
- 
+
 Just like with Twitter, a user should not be able to take any actions (except sign-up), unless they are logged in. Once a user is logged in, they should be able to create, edit and delete their own tweets, as well as view all the tweets.
 
 There are controller tests to make sure that you build the appropriate controller actions that map to the correct routes.
@@ -24,7 +24,7 @@ There are controller tests to make sure that you build the appropriate controlle
 
 *Instructions for how to work on a Group Project with Learn*
 
-### Some Hints on Working Together 
+### Some Hints on Working Together
 
 Working on a software project with another person is not something to be taken lightly. While you are a fantastic coder solo, software development is a collaborative activity. Just like anything else, there is skill in collaborating on code. In the end, collaborating with another person boils down to three different styles:
 
@@ -95,7 +95,7 @@ You'll need to create two models in `app/models`, one `User` model and one `Twee
 
 You'll need to create two migrations to create the users and the tweets table.
 
-Users should have a username, email, and password, and have many tweets.
+Users should have a username, email, and password, and have many tweets. *Hint: You should use `bcrypt` to encrypt your `password`. What should this column be named in the database?*
 
 Tweets should have content, belong to a user.
 
@@ -159,6 +159,5 @@ You'll want to create two helper methods `current_user` and `logged_in?`. You'll
 It's especially important that a user should not be able to edit or delete the tweets created by a different user. A user can only modify their own tweets.
 
 ## Does this need an update?
-Please open a [GitHub issue](https://github.com/learn-co-curriculum/phrg-sinatra-fwitter-group-project/issues) or [pull-request](https://github.com/learn-co-curriculum/phrg-sinatra-fwitter-group-project/pulls). Provide a detailed description that explains the issue you have found or the change you are proposing. Then "@" mention your instructor on the issue or pull-request, and send them a link via Connect.
 
-<p data-visibility='hidden'>PHRG Fwitter Group Project</p>
+Please open a [GitHub issue](https://github.com/learn-co-curriculum/phrg-sinatra-fwitter-group-project/issues) or [pull-request](https://github.com/learn-co-curriculum/phrg-sinatra-fwitter-group-project/pulls). Provide a detailed description that explains the issue you have found or the change you are proposing. Then "@" mention your instructor on the issue or pull-request, and send them a link via Connect.
